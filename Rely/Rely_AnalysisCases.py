@@ -7,8 +7,12 @@ all_data = {}
 
 class GetTestCase(object):
     def __init__(self):
-        cr = os.path.abspath(os.path.dirname(os.getcwd()))
-        case_path = cr + '/DependencyFiles/testData.xls'
+        path = os.getcwd()
+        subpaths = "Testcase"
+        if subpaths in path:
+            path = os.path.abspath(os.path.dirname(path) + os.path.sep + ".")
+        case_path = path + '\\DependencyFiles\\testData.xls'
+        print(case_path)
         self.workbook = xlrd.open_workbook(case_path)
         self.href = self.workbook.sheet_by_name('href')
         self.title = self.workbook.sheet_by_name('title')
@@ -114,4 +118,3 @@ class GetTestCase(object):
 
 if __name__ == '__main__':
     GetTestCase().get_all_data()
-
