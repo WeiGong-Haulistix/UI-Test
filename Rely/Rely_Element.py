@@ -106,8 +106,8 @@ def find_element_retry(driver, by, value, operate, times=100):
 def get_element_value(driver, by, value, attribute):
     print("Finding**** Find element: " + str(value))
     if find_element_re(driver, by, value):
-        print("Result**** Find element " + str(value) + ", and find attribute: " + str(attribute))
         attr = driver.find_element(by, value).get_attribute(attribute)
+        print("Result**** Find element " + str(value) + ", and find attribute: " + str(attr))
         time.sleep(1)
         return attr
     else:
@@ -118,8 +118,8 @@ def get_element_value(driver, by, value, attribute):
 def get_element_text(driver, by, value):
     if find_element_re(driver, by, value):
         print("Finding**** Find element text: " + str(value))
-        attr = driver.find_element(by, value).text
-        print("Result**** Element attribute: " + str(attr))
+        attr = driver.find_element(by, value).get_attribute("textContent")
+        print("Result**** Element attribute: textContent")
         time.sleep(1)
         return attr
     else:
