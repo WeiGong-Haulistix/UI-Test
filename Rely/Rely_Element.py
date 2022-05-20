@@ -198,12 +198,14 @@ def execute_unit(driver, unit_data):
             return True
         else:
             print('Check elements number not correct: ' + value + '**' + str(num) + '**' + str(remark))
+            return False
     elif unit_data['execute'] == "check result":
         res = get_element_text(driver, by, value)
         if res == remark:
             return True
         else:
             print('Check xpath attribute failed: ' + str(value) + '**' + str(res) + '**' + str(remark))
+            return False
     elif unit_data['execute'] == "value":
         res = check_element_value(driver, by, value, 'value', remark)
         if res is False:
@@ -216,5 +218,8 @@ def execute_method(driver, execute_data):
         if result is True:
             print("Case Done: " + str(execute_data[i]['cases']))
             return True
+        elif result is False:
+            print("Case Failed: " + str(execute_data[i]['cases']))
+            return False
         else:
             continue
