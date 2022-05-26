@@ -48,11 +48,12 @@ def change_title(driver, title):
             check_and_click(driver, by[i], value[i])
 
 
-def case_to_menu(driver, memu_data, case_name):
-    keys = list(memu_data.keys())
+def case_to_menu(driver, menu_data, case_name):
+    keys = list(menu_data.keys())
+    print(keys)
     for key in keys:
-        if key == case_name:
-            change_href(driver, memu_data[key])
+        if str(key) == str(case_name):
+            change_href(driver, menu_data[key])
 
 
 def case_common(driver, test_data):

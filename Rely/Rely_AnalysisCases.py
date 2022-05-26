@@ -12,7 +12,7 @@ class GetTestCase(object):
         if subpaths in path:
             path = os.path.abspath(os.path.dirname(path) + os.path.sep + ".")
         case_path = path + '\\DependencyFiles\\testData.xls'
-        print(case_path)
+        # print(case_path)
         self.workbook = xlrd.open_workbook(case_path)
         self.href = self.workbook.sheet_by_name('href')
         self.title = self.workbook.sheet_by_name('title')
@@ -36,22 +36,26 @@ class GetTestCase(object):
             each_case = all_data[key]
             title_name = each_case[0]
             cases_all = []
-            case_all = {}
+
             for each, items in groupby(each_case, key=itemgetter(0)):
+                case_all = {}
                 each_case = list(items)
                 if each == 'cases':
                     pass
                 else:
-
                     c = []
                     for i in range(0, len(each_case)):
                         s = {}
                         for j in range(0, len(title_name)):
                             s[title_name[j]] = each_case[i][j]
                         c.append(s)
-                    case_all[each] = c
+                    case_all['case_name'] = each
+                    case_all['case_data'] = c
+                if case_all == {}:
+                    pass
+                else:
+                    cases_all.append(case_all)
 
-            cases_all.append(case_all)
             case_trans[key] = cases_all
         print(case_trans)
         return case_trans
@@ -76,7 +80,6 @@ class GetTestCase(object):
                 button = row[0].value
                 xpath_val = row[1].value
                 href_data[button] = xpath_val
-        print(href_data)
         return href_data
 
     def get_title(self):
