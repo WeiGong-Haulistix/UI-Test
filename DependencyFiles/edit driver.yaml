@@ -1,0 +1,1181 @@
+- case_name: edit driver
+  case_data:
+    - cases: edit driver
+      button: check driver name
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: check
+      remark: ''
+
+    - cases: edit driver
+      button: click driver
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: driver number
+      by: xpath
+      value: '//input[@placeholder="Driver#"]'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: input
+      remark: Edit
+
+    - cases: edit driver
+      button: middle name
+      by: xpath
+      value: '//input[@placeholder="Middle Name"]'
+      execute: input
+      remark: Test
+
+    - cases: edit driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: input
+      remark: Name
+
+    - cases: edit driver
+      button: driver number
+      by: xpath
+      value: '//input[@placeholder="Driver#"]'
+      execute: input
+      remark: EDITD01
+
+    - cases: edit driver
+      button: email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: input
+      remark: Auto-Test@beyondtrucks.com
+
+    - cases: edit driver
+      button: onboard date
+      by: xpath
+      value: '//input[@placeholder="Onboard Date"]'
+      execute: input
+      remark: 'Apr 01, 2022'
+
+    - cases: edit driver
+      button: driver type
+      by: xpath
+      value: '//input[@placeholder="Driver Type"]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: choose driver type
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Owner
+        Operator (1099)")]
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: operation type
+      by: xpath
+      value: '//input[@placeholder="Operation Type"]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: choose operation type
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Regional")]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: mailing address
+      by: xpath
+      value: '//input[@placeholder="Mailing Address"]'
+      execute: input
+      remark: K3
+
+    - cases: edit driver
+      button: choose mailing address
+      by: xpath
+      value: '//li[contains(@id, ''el-autocomplete'')][3]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: driver license
+      by: xpath
+      value: '//input[@placeholder="Driving License#"]'
+      execute: input
+      remark: 553KK12
+
+    - cases: edit driver
+      button: add more driver items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DRIVER ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add default tractor#
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Default Tractor# "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more driver items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DRIVER ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add default trailer#
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Default Trailer# "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more driver items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DRIVER ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add fuel card number
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Fuel Card Number "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more driver items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DRIVER ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add card driver id
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Fuel Card Driver ID "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add hourly pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Hourly Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input hourly pay value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[1]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 1
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add daily pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Daily Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input daily pay value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[2]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 2
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add weekly pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Weekly Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input weekly pay value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[3]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 3
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add pay by miles-loaded miles
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Pay by Miles - Loaded
+        Miles "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by miles-loaded miles value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[4]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 4
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add pay by miles-odmeter miles
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Pay by Miles - Odometer
+        Miles "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by miles-odmeter miles value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[5]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 5
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add pay by component-load
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Pay by Component - Load
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by component-load value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[6]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 6
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add pay by component-sop
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Pay by Component - Stop
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by component-sop value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[7]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 7
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add discretion pay-bonus
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Discretion Pay - Bonus
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input discretion pay-bonus value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[8]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 8
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add discretion pay-advance
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Discretion Pay - Advance
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add discretion pay-commission
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Discretion Pay -
+        Commission "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add revenue share
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Revenue Share "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input revenue share value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[11]//input[@class="el-input__inner
+        is-star float-suffix"]
+      execute: input
+      remark: 11
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add fsc pay-%share
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="FSC Pay - % Share "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fsc pay-%share value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[12]//input[@class="el-input__inner
+        is-star float-suffix"]
+      execute: input
+      remark: 12
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add fsc pay-per mile
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="FSC Pay - $ per Mile "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fsc pay-per mile value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[13]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 13
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-lumper
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Lumper "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-detention
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Detention "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-detention Free Hours value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[15]//input[@placeholder="Free
+        Hours"]
+      execute: input
+      remark: 15
+
+    - cases: edit driver
+      button: input acc pay-detention value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[15]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 15
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-tonu
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - TONU "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-tonu value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[16]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 16
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-layover
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Layover "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-layover value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[17]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 17
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-addtional stop
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Additional
+        Stop "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-addtional stop Free Stops value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[18]//input[@placeholder="Free
+        Stops"]
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: input acc pay-addtional stop value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[18]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add acc pay-driver assist
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Driver Assist
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-driver assist value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[19]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 19
+
+    - cases: edit driver
+      button: add more pay items
+      by: xpath
+      value: '//span[contains(., " ADD MORE PAY ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add customized pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="+ Customized Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input customized pay Customized Name value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[20]//input[@placeholder="Customized
+        Name"]
+      execute: input
+      remark: aotutest Customized Name
+
+    - cases: edit driver
+      button: input customized pay value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[13]/div[20]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 20
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add eld
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ELD "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input eld value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[15]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 1
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add auto insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Auto Insurance "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input auto insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[16]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 2
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add plate
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Plate "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input plate value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[17]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 3
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add cargo insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Cargo Insurance "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input cargo insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[18]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 4
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Insurance "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[19]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 5
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add occupational accident insurance
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Occupational Accident
+        Insurance "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input occupational accident insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[20]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 6
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add tag
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Tag "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tag value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[21]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 7
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add non-trucking insurance
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Non-Trucking Insurance
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input non-trucking insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[22]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 8
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add tax
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Tax "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tax value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[23]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 9
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add trailer lease
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Trailer Lease "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input trailer lease value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[24]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 10
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add tractor lease
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Tractor Lease "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tractor lease value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[25]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 11
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add trailer mileage-odmeter
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Trailer Mileage -
+        Odometer "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input trailer mileage-odmeter value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[26]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 12
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add tractor mileage-odmeter
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Tractor Mileage -
+        Odometer "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tractor mileage-odmeter value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[27]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 13
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add parking
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Parking "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input parking value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[28]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 14
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add physical damage insurance
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="Physical Damage
+        Insurance "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input physical damage insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[29]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 15
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add passenger insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Passenger Insurance "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input passenger insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[30]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 16
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add uniforms
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Uniforms "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input uniforms value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[31]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 17
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add health insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Health Insurance "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input health insurance value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[32]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add fuel
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Fuel "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fuel value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[33]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 19
+
+    - cases: edit driver
+      button: add more deduction items
+      by: xpath
+      value: '//span[contains(., " ADD MORE DEDUCTION ITEMS")]/..'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: add customized deduction
+      by: xpath
+      value: >-
+        //div[@aria-hidden="false"]/*/*/*/*/div[text()="+ Customized Deduction
+        "]
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input customized deduction Customized Name value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[34]//input[@placeholder="Customized
+        Name"]
+      execute: input
+      remark: autotest Customized Name
+
+    - cases: edit driver
+      button: input customized deduction value
+      by: xpath
+      value: >-
+        //*[@id="app"]/div[1]/div/div[2]/div/div[1]/div/div[2]/form/div[34]//input[@class="el-input__inner
+        is-star float-prefix"]
+      execute: input
+      remark: 20
+
+    - cases: edit driver
+      button: edit fuel card
+      by: xpath
+      value: '//input[@placeholder="Fuel Card#"]'
+      execute: input
+      remark: TEST00007
+
+    - cases: edit driver
+      button: edit fuel card driver ID
+      by: xpath
+      value: '//input[@placeholder="Fuel Card Driver ID"]'
+      execute: input
+      remark: '553'
+
+    - cases: edit driver
+      button: save
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default"]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: check driver phone
+      by: xpath
+      value: >-
+        //p[contains(text(), "AutoTestEdit Name")]
+      execute: check
+      remark: AutoTestEdit Name
+
+    - cases: edit driver
+      button: check driver phone
+      by: xpath
+      value: >-
+        //p[contains(text(), "AutoTestEdit Name")]/../../../following-sibling::td[2]/div
+      execute: check result
+      remark: (505) 441-3006

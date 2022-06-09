@@ -57,9 +57,9 @@ def case_to_menu(driver, menu_data, case_name):
 
 
 def case_common(driver, test_data):
-        case_re = execute_method(driver, test_data)
-        if case_re is True:
-            return True
-        else:
-            print('Testcase false!')
-            return False
+    case_re = execute_method(driver, test_data)
+    if case_re is True:
+        return True
+    else:
+        print('Testcase false!')
+        return False

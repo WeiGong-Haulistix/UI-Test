@@ -1,0 +1,56 @@
+- case_name: create new vendor
+  case_data:
+    - cases: create new vendor
+      button: new Vendor
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default search-btn"]'
+      execute: click
+      remark: ''
+    - cases: create new vendor
+      button: check input Name
+      by: xpath
+      value: '//input[@placeholder="Name"]'
+      execute: check
+      remark: ''
+    - cases: create new vendor
+      button: input Name
+      by: xpath
+      value: '//input[@placeholder="Name"]'
+      execute: input
+      remark: 'AutotestNewVendor'
+    - cases: create new vendor
+      button: save button
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default"]'
+      execute: click
+      remark: ''
+    - cases: create new vendor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: create new vendor
+      button: back the Vendor
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: click
+      remark: ''
+    - cases: create new vendor
+      button: check driver name
+      by: xpath
+      value: '//span[@class="form-title"]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: create new vendor
+      button: save button
+      by: xpath
+      value: '//button[@class="el-button el-button--text discard"]'
+      execute: click
+      remark: ''
+    - cases: create new vendor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check result
+      remark: 'AutotestNewVendor'
