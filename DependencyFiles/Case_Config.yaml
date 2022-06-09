@@ -9,18 +9,18 @@
   - p3
   property_setting: 1
 -
-  case name: new driver
+  case name: 'new&check driver'
   case tag: p0
   case property: 1
 -
-  case name: check new driver
+  case name: 'edit driver'
   case tag: p0
   case property: 1
 -
-  case name: edit driver
+  case name: 'new&check vendor'
   case tag: p0
   case property: 1
 -
-  case name: create new vendor
+  case name: 'edit vendor'
   case tag: p0
   case property: 1
