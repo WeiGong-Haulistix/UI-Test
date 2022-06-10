@@ -25,6 +25,6 @@
   case tag: p0
   case property: 1
 -
-  case name: 'new dispatcher'
+  case name: 'new&check dispatcher'
   case tag: p0
   case property: 1

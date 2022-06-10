@@ -13,5 +13,5 @@
   case name: 'edit vendor'
   title name: 'vendor'
 -
-  case name: 'new dispatcher'
+  case name: 'new&check dispatcher'
   title name: 'dispatcher&management'

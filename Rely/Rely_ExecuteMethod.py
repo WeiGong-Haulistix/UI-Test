@@ -1,5 +1,6 @@
 from Rely.Rely_Element import *
 from Rely.Rely_AnalysisCases import *
+from Rely.Rely_AnalysisCases_FromYaml import *
 
 
 def change_href(driver, href):
@@ -49,11 +50,11 @@ def change_title(driver, title):
 
 
 def case_to_menu(driver, menu_data, case_name):
-    keys = list(menu_data.keys())
-    print(keys)
-    for key in keys:
-        if str(key) == str(case_name):
-            change_href(driver, menu_data[key])
+    for i in range(0, len(menu_data)):
+        if menu_data[i]['case name'] == str(case_name):
+            change_href(driver, menu_data[i]['title name'])
+        else:
+            continue
 
 
 def case_common(driver, test_data):
