@@ -24,3 +24,7 @@
   case name: 'edit vendor'
   case tag: p0
   case property: 1
+-
+  case name: 'new dispatcher'
+  case tag: p0
+  case property: 1

@@ -8,7 +8,7 @@ class ExecuteCount:
 
     @staticmethod
     def count():
-        var = 469
+        var = 1
         path = os.path.abspath(os.path.dirname(os.getcwd())) + '/Rely/Rely_Count.py'
         with open(path, 'r', encoding='utf-8') as fl:
             fl.seek(4)

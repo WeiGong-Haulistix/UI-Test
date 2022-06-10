@@ -1,0 +1,17 @@
+# case name: 用例文件名
+# title name: 用例名称对应的需要进入的系统菜单
+-
+  case name: 'new&check driver'
+  title name: 'drivers'
+-
+  case name: 'edit driver'
+  title name: 'drivers'
+-
+  case name: 'new&check vendor'
+  title name: 'vendor'
+-
+  case name: 'edit vendor'
+  title name: 'vendor'
+-
+  case name: 'new dispatcher'
+  title name: 'dispatcher&management'

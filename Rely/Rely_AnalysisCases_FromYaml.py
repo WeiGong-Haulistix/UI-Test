@@ -38,3 +38,25 @@ class YamlHandle(object):
         :return: dict&str
         """
         return self.load(filename)[node]
+
+    def get_change_menu(self):
+        menu_file = self.load('Case_change menu')
+        return menu_file
+
+    def return_case_data(self):
+        """
+            从Case_Config.yaml文件中取出满足要求的用例名
+            将匹配的用例文件写入到cases_data
+        """
+        cases_list = self.load('Case_Config')
+        cases_data = []
+        for i in range(1, len(cases_list)):
+            if cases_list[i]['case tag'] in cases_list[0]['tag_setting'] \
+                    and cases_list[i]['case property'] == cases_list[0]['property_setting']:
+                case_data_temp = YamlHandle().load(cases_list[i]['case name'])
+                cases_data.extend(case_data_temp)
+        return cases_data
+
+
+if __name__ == "__main__":
+    YamlHandle().get_change_menu()
