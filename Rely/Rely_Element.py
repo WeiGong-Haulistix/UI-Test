@@ -1,5 +1,7 @@
 import time
 
+from Rely.Rely_database import DoMysql
+
 
 def is_element_exist(driver, by, value):
     s = driver.find_elements(by, value)
@@ -210,11 +212,23 @@ def execute_unit(driver, unit_data):
         res = check_element_value(driver, by, value, 'value', remark)
         if res is False:
             return False
+    # 执行sql
+    elif unit_data['execute'] == "execute sql":
+        res = DoMysql().execute_sql_string(value)
+        DoMysql().close_connect()
+        print('bool(res):', bool(res))
+        if res:
+            print('execute_sql_succeeded: ' + str(value))
+            return True
+        else:
+            print('execute_sql_failed: ' + str(value))
+            return False
 
 
 def execute_method(driver, execute_data):
     for i in range(0, len(execute_data)):
         result = execute_unit(driver, execute_data[i])
+        print(execute_data[i], ':', bool(result))
         if result is True:
             print("Case Done: " + str(execute_data[i]['cases']))
             return True

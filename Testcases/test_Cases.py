@@ -33,6 +33,7 @@ class TestExecute(unittest.TestCase):
         print('---------------------Start Case: ' + str(case_name) + '---------------------')
         case_to_menu(saas_driver, change_menu_data, case_name)
         case_exe = case_common(saas_driver, case_data)
+        if DoMysql().close_connect() is True: DoMysql().close_connect()
         assert case_exe, 'Case execute failed!'
 
     @classmethod

@@ -88,8 +88,8 @@
       value: >-
         //p[contains(text(), "AutoTest
         Driver")]/../../../following-sibling::td[2]/div
-      execute: check result
-      remark: (505) 441-3006
+      execute: check
+      remark: '(505) 441-3006'
     - cases: new&check driver
       button: check driver name
       by: xpath
@@ -166,5 +166,12 @@
       value: >-
         //p[contains(text(), "AutoTest
         Driver")]/../../../following-sibling::td[2]/div
-      execute: check result
-      remark: (505) 441-3006
+      execute: check
+      remark: '(505) 441-3006'
+
+    - cases: new&check driver
+      button: delete driver data
+      by: ''
+      value: DELETE FROM beyondtrucks_test.sys_user WHERE phonenumber='5054413006';
+      execute: execute sql
+      remark: ''
