@@ -1,0 +1,110 @@
+- case_name: new&check dispatcher
+  case_data:
+    - cases: new&check dispatcher
+      button: user title
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check
+      remark: ''
+    - cases: new&check dispatcher
+      button: new button
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default search-btn"]'
+      execute: click
+      remark: ''
+    - cases: new&check dispatcher
+      button: new dispatcher title
+      by: xpath
+      value: '//span[contains(text(), "NEW TEAM MEMBER")]'
+      execute: check
+      remark: ''
+    - cases: new&check dispatcher
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: input
+      remark: AutoTest
+    - cases: new&check dispatcher
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: input
+      remark: Dispatcher
+    - cases: new&check dispatcher
+      button: email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: input
+      remark: TestDispatcher@beyondtrucks.com
+    - cases: new&check dispatcher
+      button: group
+      by: xpath
+      value: '//input[@placeholder="Group"]'
+      execute: click
+      remark: ''
+    - cases: new&check dispatcher
+      button: choose group
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Manager")]/..'
+      execute: click
+      remark: ''
+    - cases: new&check dispatcher
+      button: save
+      by: xpath
+      value: '//span[contains(., "SAVE")]/..'
+      execute: click
+      remark: ''
+    - cases: new&check dispatcher
+      button: check user name
+      by: xpath
+      value: '//div[contains(., "AutoTest Dispatcher")]/..'
+      execute: check
+      remark: ''
+    - cases: new&check dispatcher
+      button: click user
+      by: xpath
+      value: '//div[contains(., "AutoTest Dispatcher")]/..'
+      execute: click one
+      remark: '15'
+    - cases: new&check dispatcher
+      button: driver detail
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: check
+      remark: ''
+    - cases: new&check dispatcher
+      button: check first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: value
+      remark: 'AutoTest'
+    - cases: new&check dispatcher
+      button: check last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: value
+      remark: 'Dispatcher'
+    - cases: new&check dispatcher
+      button: check email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: value
+      remark: 'TestDispatcher@beyondtrucks.com'
+    - cases: new&check dispatcher
+      button: check group
+      by: xpath
+      value: '//input[@placeholder="Group"]'
+      execute: value
+      remark: 'Manager'
+    - cases: new&check dispatcher
+      button: cancel
+      by: xpath
+      value: '//button[@class="el-button el-button--small discard ghost-button"]'
+      execute: click
+      remark: ''
+    - cases: new&check dispatcher
+      button: check user
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check result
+      remark: 'USERS & GROUPS'

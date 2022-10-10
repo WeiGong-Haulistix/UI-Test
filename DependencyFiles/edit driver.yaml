@@ -1,0 +1,1087 @@
+- case_name: edit driver
+  case_data:
+    - cases: edit driver
+      button: check driver name
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: check
+      remark: ''
+
+    - cases: edit driver
+      button: click driver
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: check first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: check
+      remark: ''
+
+    - cases: edit driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: driver number
+      by: id
+      value: 'driverNumber'
+      execute: clear
+      remark: ''
+
+    - cases: edit driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: input
+      remark: Edit
+
+    - cases: edit driver
+      button: middle name
+      by: xpath
+      value: '//input[@placeholder="Middle Name"]'
+      execute: input
+      remark: Test
+
+    - cases: edit driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: input
+      remark: Name
+
+    - cases: edit driver
+      button: driver number
+      by: id
+      value: 'driverNumber'
+      execute: input
+      remark: EDITD01
+
+    - cases: edit driver
+      button: onboard date
+      by: id
+      value: 'onboardDate'
+      execute: input
+      remark: 'Apr 01, 2022'
+
+    - cases: edit driver
+      button: onboard date
+      by: id
+      value: 'email'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: email
+      by: id
+      value: 'email'
+      execute: input
+      remark: Auto-Test@beyondtrucks.com
+
+    - cases: edit driver
+      button: driver type
+      by: xpath
+      value: '//input[@placeholder="Driver Type"]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: choose driver type
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Owner Operator (1099)")]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: operation type
+      by: id
+      value: 'operationType'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: choose operation type
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Regional")]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: mailing address
+      by: xpath
+      value: '//input[@placeholder="Mailing Address"]'
+      execute: input
+      remark: K3
+
+    - cases: edit driver
+      button: choose mailing address
+      by: xpath
+      value: '//li[contains(@id, ''el-autocomplete'')][3]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: driver license
+      by: id
+      value: 'drivingLicense'
+      execute: input
+      remark: 553KK12
+
+    - cases: edit driver
+      button: add more driver items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 0
+
+    - cases: edit driver
+      button: add default tractor#
+      by: xpath
+      value: '//div[@aria-hidden="false"]/div/div/div/div/div[@id="Default Tractor #"]'
+      execute: click
+      remark: 0
+
+    - cases: edit driver
+      button: add more driver items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 0
+
+    - cases: edit driver
+      button: add default trailer#
+      by: xpath
+      value: '//div[@aria-hidden="false"]/div/div/div/div/div[@id="Default Trailer #"]'
+      execute: click
+      remark: 0
+
+    - cases: edit driver
+      button: add more driver items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 0
+
+    - cases: edit driver
+      button: add fuel card number
+      by: xpath
+      value: '//div[@aria-hidden="false"]/div/div/div/div/div[@id="Fuel Card Number"]'
+      execute: click
+      remark: '0'
+
+    - cases: edit driver
+      button: add more driver items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 0
+
+    - cases: edit driver
+      button: add card driver id
+      by: xpath
+      value: '//div[@aria-hidden="false"]/div/div/div/div/div[@id="Fuel Card Driver ID"]'
+      execute: click
+      remark: '0'
+
+    - cases: edit driver
+      button: input fuel card#
+      by: id
+      value: 'fuelNumber'
+      execute: input
+      remark: 'FAST01'
+
+    - cases: edit driver
+      button: input fuel card driver id
+      by: id
+      value: 'fuelId'
+      execute: input
+      remark: '500114'
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add hourly pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Hourly Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input hourly pay value
+      by: id
+      value: 'hourlyPay0'
+      execute: input
+      remark: 1
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add daily pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Daily Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input daily pay value
+      by: id
+      value: 'dailyPay1'
+      execute: input
+      remark: 2
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add weekly pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Weekly Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input weekly pay value
+      by: id
+      value: 'weeklyPay2'
+      execute: input
+      remark: 3
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add pay by miles-loaded miles
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Pay by Miles - Loaded Miles "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by miles-loaded miles value
+      by: id
+      value: 'loadMiles3'
+      execute: input
+      remark: 4
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add pay by miles-odmeter miles
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Pay by Miles - Odometer Miles"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by miles-odmeter miles value
+      by: id
+      value: 'odoMiles4'
+      execute: input
+      remark: 5
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add pay by component-load
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Pay by Component - Load"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by component-load value
+      by: id
+      value: 'loadCom5'
+      execute: input
+      remark: 6
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add pay by component-sop
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Pay by Component - Stop"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input pay by component-sop value
+      by: id
+      value: 'stopCom6'
+      execute: input
+      remark: 7
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add discretion pay-bonus
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Discretion Pay - Bonus"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input discretion pay-bonus value
+      by: id
+      value: 'bonusPay7'
+      execute: input
+      remark: 8
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add discretion pay-advance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Discretion Pay - Advance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add discretion pay-commission
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Discretion Pay - Commission"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add revenue share
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="Revenue Share "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input revenue share value
+      by: id
+      value: 'sharePay10'
+      execute: input
+      remark: 11
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add fsc pay-%share
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="FSC Pay - % Share "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fsc pay-%share value
+      by: id
+      value: 'fscSharePay11'
+      execute: input
+      remark: 12
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add fsc pay-per mile
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="FSC Pay - $ per Mile "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fsc pay-per mile value
+      by: id
+      value: 'fscMilePay12'
+      execute: input
+      remark: 13
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+
+    - cases: edit driver
+      button: add acc pay-detention
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Detention "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-detention Free Hours value
+      by: id
+      value: 'freeHours13'
+      execute: input
+      remark: 2
+
+    - cases: edit driver
+      button: input acc pay-detention value
+      by: id
+      value: 'detentionAcc13'
+      execute: input
+      remark: 15
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add acc pay-tonu
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - TONU "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-tonu value
+      by: id
+      value: 'tonuAcc14'
+      execute: input
+      remark: 16
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add acc pay-layover
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Layover "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-layover value
+      by: id
+      value: 'layoverAcc15'
+      execute: input
+      remark: 17
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add acc pay-addtional stop
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ACC Pay - Additional Stop "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-addtional stop Free Stops value
+      by: id
+      value: 'freeStop16'
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: input acc pay-addtional stop value
+      by: id
+      value: 'stopAcc16'
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add acc pay-driver assist
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="ACC Pay - Driver Assist"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input acc pay-driver assist value
+      by: id
+      value: 'assistAcc17'
+      execute: input
+      remark: 19
+
+    - cases: edit driver
+      button: add more pay items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 1
+
+    - cases: edit driver
+      button: add customized pay
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="+ Customized Pay "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input customized pay Customized Name value
+      by: id
+      value: 'customizedName18'
+      execute: input
+      remark: aotutest Customized Name
+
+    - cases: edit driver
+      button: input customized pay value
+      by: id
+      value: 'customPay18'
+      execute: input
+      remark: 20
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add eld
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[text()="ELD "]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input eld value
+      by: id
+      value: 'perStl0'
+      execute: input
+      remark: 1
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add auto insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Auto Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input auto insurance value
+      by: id
+      value: 'perStl1'
+      execute: input
+      remark: 2
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add plate
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Plate"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input plate value
+      by: id
+      value: 'perStl2'
+      execute: input
+      remark: 3
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add cargo insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Cargo Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input cargo insurance value
+      by: id
+      value: 'perStl3'
+      execute: input
+      remark: 4
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input insurance value
+      by: id
+      value: 'perStl4'
+      execute: input
+      remark: 5
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add occupational accident insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Occupational Accident Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input occupational accident insurance value
+      by: id
+      value: 'perStl5'
+      execute: input
+      remark: 6
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add tag
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Tag"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tag value
+      by: id
+      value: 'perStl6'
+      execute: input
+      remark: 7
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add non-trucking insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Non-Trucking Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input non-trucking insurance value
+      by: id
+      value: 'perStl7'
+      execute: input
+      remark: 8
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add tax
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Tax"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tax value
+      by: id
+      value: 'perStl8'
+      execute: input
+      remark: 9
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add trailer lease
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Trailer Lease"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input trailer lease value
+      by: id
+      value: 'perStl9'
+      execute: input
+      remark: 10
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add tractor lease
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Tractor Lease"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tractor lease value
+      by: id
+      value: 'perStl10'
+      execute: input
+      remark: 11
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add trailer mileage-odmeter
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Trailer Mileage - Odometer"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input trailer mileage-odmeter value
+      by: id
+      value: 'perStl11'
+      execute: input
+      remark: 12
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add tractor mileage-odmeter
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Tractor Mileage - Odometer"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input tractor mileage-odmeter value
+      by: id
+      value: 'perStl12'
+      execute: input
+      remark: 13
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add parking
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Parking"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input parking value
+      by: id
+      value: 'perStl13'
+      execute: input
+      remark: 14
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add physical damage insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Physical Damage Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input physical damage insurance value
+      by: id
+      value: 'perStl14'
+      execute: input
+      remark: 15
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add passenger insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Passenger Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input passenger insurance value
+      by: id
+      value: 'perStl15'
+      execute: input
+      remark: 16
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add uniforms
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Uniforms"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input uniforms value
+      by: id
+      value: 'perStl16'
+      execute: input
+      remark: 17
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add health insurance
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Health Insurance"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input health insurance value
+      by: id
+      value: 'perStl17'
+      execute: input
+      remark: 18
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add fuel
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="Fuel"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input fuel value
+      by: id
+      value: 'perStl18'
+      execute: input
+      remark: 19
+
+    - cases: edit driver
+      button: add more deduction items
+      by: id
+      value: 'moreBtn'
+      execute: click one
+      remark: 2
+
+    - cases: edit driver
+      button: add customized deduction
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/div[@id="+ Customized Deduction"]'
+      execute: click one
+      remark: '0'
+
+    - cases: edit driver
+      button: input customized deduction name
+      by: id
+      value: 'customizedName19'
+      execute: input
+      remark: autotest Customized Name
+
+    - cases: edit driver
+      button: input customized deduction value
+      by: id
+      value: 'perStl19'
+      execute: input
+      remark: 20
+
+    - cases: edit driver
+      button: save
+      by: id
+      value: 'save-btn'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: back
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: back confirm
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default undefined el-button--small"]'
+      execute: click
+      remark: ''
+
+    - cases: edit driver
+      button: check driver phone
+      by: xpath
+      value: '//p[contains(text(), "Edit Name")]'
+      execute: check
+      remark: Edit Name
+
+    - cases: edit driver
+      button: check driver phone
+      by: xpath
+      value: '//p[contains(text(), "Edit Name")]/../../../following-sibling::td[2]/div'
+      execute: check result
+      remark: (505) 441-3006
+
+    - cases: edit driver
+      button: delete driver data
+      by: ''
+      value: DELETE FROM beyondtrucks_test.sys_user WHERE phonenumber='5054413006';
+      execute: execute sql
+      remark: ''

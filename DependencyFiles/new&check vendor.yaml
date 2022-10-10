@@ -1,0 +1,86 @@
+- case_name: new&check vendor
+  case_data:
+    - cases: new&check vendor
+      button: new Vendor
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default search-btn"]'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: check input Name
+      by: id
+      value: 'vendor_name'
+      execute: check
+      remark: ''
+    - cases: new&check vendor
+      button: input Name
+      by: id
+      value: 'vendor_name'
+      execute: input
+      remark: 'AutotestNewVendor'
+    - cases: new&check vendor
+      button: vendor type
+      by: id
+      value: 'vendor_type'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: choose vendor type
+      by: xpath
+      value: '//span[contains(text(), "Fuel")]'
+      execute: click one
+      remark: 1
+    - cases: new&check vendor
+      button: save button
+      by: id
+      value: 'save-btn'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: back button
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: new&check vendor
+      button: back the Vendor
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: check driver name
+      by: xpath
+      value: '//span[@class="form-title"]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: new&check vendor
+      button: check driver type
+      by: id
+      value: 'vendor_type'
+      execute: value
+      remark: 'Fuel'
+    - cases: new&check vendor
+      button: check driver status
+      by: xpath
+      value: '//label[@id="vendor_status"]/span[@class="el-checkbox__input is-checked"]'
+      execute: check
+      remark: ' Active'
+    - cases: new&check vendor
+      button: back button
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+    - cases: new&check vendor
+      button: check status
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]/../../td[2]//div[@class="cell"]'
+      execute: check result
+      remark: ' Active'

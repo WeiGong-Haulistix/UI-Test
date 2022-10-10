@@ -1,0 +1,38 @@
+# case name: 用例文件名
+# case tag: 用例优先级 (P0/P1/P2/P3)
+# case property: 用例属性 (1/0)
+-
+  tag_setting:
+  - p0
+  - p1
+  - p2
+  - p3
+  property_setting: 1
+-
+  case name: 'new&check driver'
+  case tag: p0
+  case property: 0
+-
+  case name: 'edit driver'
+  case tag: p0
+  case property: 1
+-
+  case name: 'new&check vendor'
+  case tag: p0
+  case property: 0
+-
+  case name: 'edit vendor'
+  case tag: p0
+  case property: 0
+-
+  case name: 'new&check dispatcher'
+  case tag: p0
+  case property: 0
+-
+  case name: 'edit dispatcher'
+  case tag: p0
+  case property: 0
+-
+  case name: 'new&check tractor'
+  case tag: p0
+  case property: 0

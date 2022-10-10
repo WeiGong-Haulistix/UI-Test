@@ -1,0 +1,218 @@
+- case_name: edit dispatcher
+  case_data:
+    - cases: edit dispatcher
+      button: user title
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: check user name
+      by: xpath
+      value: '//div[contains(., "AutoTest Dispatcher")]/..'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: click user
+      by: xpath
+      value: '//div[contains(., "AutoTest Dispatcher")]/..'
+      execute: click one
+      remark: '15'
+    - cases: edit dispatcher
+      button: user detail
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: clear first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: clear
+      remark: ''
+    - cases: edit dispatcher
+      button: clear last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: clear
+      remark: ''
+    - cases: edit dispatcher
+      button: clear email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: clear
+      remark: ''
+    - cases: edit dispatcher
+      button: group
+      by: xpath
+      value: '//input[@placeholder="Group"]'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: choose group
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Dispatcher")]/..'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: input first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: input
+      remark: 'EditDispatcher'
+    - cases: edit dispatcher
+      button: input middle name
+      by: xpath
+      value: '//input[@placeholder="Middle Name"]'
+      execute: input
+      remark: 'Middle'
+    - cases: edit dispatcher
+      button: input last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: input
+      remark: 'AutoTest'
+    - cases: edit dispatcher
+      button: input email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: input
+      remark: 'TestDispatcher@beyondtrucks.com'
+    - cases: edit dispatcher
+      button: input phone#
+      by: xpath
+      value: '//input[@placeholder="Phone #"]'
+      execute: input
+      remark: '9095555555'
+    - cases: edit dispatcher
+      button: input phone# Ext
+      by: xpath
+      value: '//input[@placeholder="Ext"]'
+      execute: input
+      remark: '555'
+    - cases: edit dispatcher
+      button: input address
+      by: xpath
+      value: '//input[@placeholder="Mailing Address"]'
+      execute: input
+      remark: 'k2'
+    - cases: edit dispatcher
+      button: click address
+      by: xpath
+      value: '//li[contains(@id, "el-autocomplete")][1]'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: inactive dispatcher
+      by: xpath
+      value: '//span[@class="el-checkbox__label"]'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: save
+      by: xpath
+      value: '//span[contains(., "SAVE")]/..'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: check title
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check
+      remark: 'USERS & GROUPS'
+    - cases: edit dispatcher
+      button: check user
+      by: xpath
+      value: '//div[contains(., "EditDispatcher AutoTest")]/..'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: check status
+      by: xpath
+      value: '//div[contains(., " Inactive")]'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: click user
+      by: xpath
+      value: '//div[contains(., "EditDispatcher AutoTest")]/..'
+      execute: click one
+      remark: '15'
+    - cases: edit dispatcher
+      button: check user detail
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: check
+      remark: ''
+    - cases: edit dispatcher
+      button: check first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: check
+      remark: 'EditDispatcher'
+    - cases: edit dispatcher
+      button: check middle name
+      by: xpath
+      value: '//input[@placeholder="Middle Name"]'
+      execute: check
+      remark: 'Middle'
+    - cases: edit dispatcher
+      button: check last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: check
+      remark: 'AutoTest'
+    - cases: edit dispatcher
+      button: check email
+      by: xpath
+      value: '//input[@placeholder="Email"]'
+      execute: check
+      remark: 'TestDispatcher@beyondtrucks.com'
+    - cases: edit dispatcher
+      button: check group
+      by: xpath
+      value: '//input[@placeholder="Group"]'
+      execute: check
+      remark: 'Dispatcher'
+    - cases: edit dispatcher
+      button: check phone#
+      by: xpath
+      value: '//input[@placeholder="Phone #"]'
+      execute: check
+      remark: '9095555555'
+    - cases: edit dispatcher
+      button: check phone# Ext
+      by: xpath
+      value: '//input[@placeholder="Ext"]'
+      execute: check
+      remark: '555'
+    - cases: edit dispatcher
+      button: check address
+      by: xpath
+      value: '//input[@placeholder="Mailing Address"]'
+      execute: check
+      remark: 'K271 County Road 14'
+    - cases: edit dispatcher
+      button: check city/state
+      by: xpath
+      value: '//input[@placeholder="City / State"]'
+      execute: check
+      remark: 'Napoleon, OH'
+    - cases: edit dispatcher
+      button: check ZIP
+      by: xpath
+      value: '//input[@placeholder="ZIP"]'
+      execute: check
+      remark: '43545'
+    - cases: new&check dispatcher
+      button: cancel
+      by: xpath
+      value: '//button[@class="el-button el-button--small discard ghost-button"]'
+      execute: click
+      remark: ''
+    - cases: edit dispatcher
+      button: check title
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check result
+      remark: 'USERS & GROUPS'

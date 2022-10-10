@@ -1,0 +1,110 @@
+- case_name: edit vendor
+  case_data:
+    - cases: edit vendor
+      button: check vendor name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: edit vendor
+      button: click vendor profile
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: clear name
+      by: id
+      value: 'vendor_name'
+      execute: clear
+      remark: ''
+    - cases: edit vendor
+      button: edit name
+      by: id
+      value: 'vendor_name'
+      execute: input
+      remark: AutotestEditedVendor
+    - cases: edit vendor
+      button: enter Type
+      by: id
+      value: 'vendor_type'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: choose one Type
+      by: xpath
+      value: '//div[@aria-hidden="false"]//span[contains(text(), "Accident")]'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: enter contact
+      by: id
+      value: 'vendor_contact'
+      execute: input
+      remark: 'Vendor Manager'
+    - cases: edit vendor
+      button: mailing address
+      by: id
+      value: 'address'
+      execute: input
+      remark: 1
+    - cases: edit vendor
+      button: choose mailing address
+      by: xpath
+      value: '//div[@aria-hidden="false"]//li[contains(@id,"item-1")]'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: enter Phone
+      by: id
+      value: 'vendor_phone'
+      execute: input
+      remark: '2342342345'
+    - cases: edit vendor
+      button: enter Email
+      by: id
+      value: 'vendor_email'
+      execute: input
+      remark: 'autotest@test.com'
+    - cases: edit vendor
+      button: enter Description
+      by: id
+      value: 'vendor_notes'
+      execute: input
+      remark: 'text'
+    - cases: edit vendor
+      button: click Status
+      by: xpath
+      value: '//span[@class="el-checkbox__label"]'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: save button
+      by: id
+      value: 'save-btn'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: check message
+      by: xpath
+      value: '//p[contains(text(), "Vendor info has been updated successfully.")]'
+      execute: check
+      remark: 'Vendor info has been updated successfully.'
+    - cases: edit vendor
+      button: back button
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+    - cases: edit vendor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestEditedVendor")]'
+      execute: check
+      remark: 'AutotestEditedVendor'
+    - cases: edit vendor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestEditedVendor")]/../../td[2]//div[@class="cell"]'
+      execute: check result
+      remark: ' Inactive'

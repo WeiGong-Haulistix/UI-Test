@@ -1,0 +1,62 @@
+- case_name: new&check tractor
+  case_data:
+    - cases: new&check tractor
+      button: new tractor
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default search-btn"]'
+      execute: click
+      remark: ''
+    - cases: new&check tractor
+      button: check input Name
+      by: xpath
+      value: '//input[@placeholder="Name"]'
+      execute: check
+      remark: ''
+    - cases: new&check tractor
+      button: input Name
+      by: xpath
+      value: '//input[@placeholder="Name"]'
+      execute: input
+      remark: 'AutotestNewVendor'
+    - cases: new&check tractor
+      button: save button
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default"]'
+      execute: click
+      remark: ''
+    - cases: new&check tractor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: new&check tractor
+      button: back the tractor
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: click
+      remark: ''
+    - cases: new&check tractor
+      button: check driver name
+      by: xpath
+      value: '//span[@class="form-title"]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: new&check tractor
+      button: save button
+      by: xpath
+      value: '//button[@class="el-button el-button--text discard"]'
+      execute: click
+      remark: ''
+    - cases: new&check tractor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]'
+      execute: check
+      remark: 'AutotestNewVendor'
+    - cases: new&check tractor
+      button: check driver name
+      by: xpath
+      value: '//div[contains(text(), "AutotestNewVendor")]/../../td[2]//div[@class="cell"]'
+      execute: check result
+      remark: ' Active'

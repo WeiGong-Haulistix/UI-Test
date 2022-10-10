@@ -1,0 +1,161 @@
+- case_name: new&check driver
+  case_data:
+    - cases: new&check driver
+      button: driver title
+      by: xpath
+      value: '//div[contains(text(), "USERS & GROUPS")]'
+      execute: check
+      remark: ''
+    - cases: new&check driver
+      button: new button
+      by: xpath
+      value: '//button[@class="el-button el-button--primary el-button--default search-btn"]'
+      execute: click
+      remark: ''
+    - cases: new&check driver
+      button: new driver title
+      by: xpath
+      value: '//span[contains(text(), "NEW DRIVER")]'
+      execute: check
+      remark: ''
+    - cases: new&check driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: input
+      remark: AutoTest
+    - cases: new&check driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: input
+      remark: Driver
+    - cases: new&check driver
+      button: driver number
+      by: id
+      value: 'driverNumber'
+      execute: input
+      remark: ATestDriver0
+    - cases: new&check driver
+      button: phone number
+      by: id
+      value: 'phone'
+      execute: input
+      remark: '5054413006'
+    - cases: new&check driver
+      button: driver type
+      by: xpath
+      value: '//input[@placeholder="Driver Type"]'
+      execute: click
+      remark: ''
+    - cases: new&check driver
+      button: choose driver type
+      by: xpath
+      value: '//div[@aria-hidden="false"]/*/*/*/*/*/span[contains(text(), "Company Driver (W2)")]'
+      execute: click
+      remark: ''
+    - cases: new&check driver
+      button: save
+      by: id
+      value: 'save-btn'
+      execute: click
+      remark: ''
+    - cases: new&check driver
+      button: check detail
+      by: xpath
+      value: '//div[contains(text(), "505-441-3006")]'
+      execute: check
+      remark: ''
+    - cases: new&check driver
+      button: check detail
+      by: id
+      value: 'driverType'
+      execute: value
+      remark: 'Company Driver (W2)'
+    - cases: new&check driver
+      button: back
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+    - cases: new&check driver
+      button: check driver name
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: check
+      remark: AutoTest Driver
+    - cases: new&check driver
+      button: check driver phone
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]/../../../following-sibling::td[2]/div'
+      execute: check
+      remark: '(505) 441-3006'
+    - cases: new&check driver
+      button: check driver name
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: check
+      remark: ''
+
+    - cases: new&check driver
+      button: click driver
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: click
+      remark: ''
+
+    - cases: new&check driver
+      button: driver detail
+      by: xpath
+      value: '//span[contains(text(), "AutoTest Driver")]'
+      execute: check
+      remark: ''
+
+    - cases: new&check driver
+      button: first name
+      by: xpath
+      value: '//input[@placeholder="First Name"]'
+      execute: value
+      remark: AutoTest
+
+    - cases: new&check driver
+      button: last name
+      by: xpath
+      value: '//input[@placeholder="Last Name"]'
+      execute: value
+      remark: Driver
+
+    - cases: new&check driver
+      button: driver number
+      by: id
+      value: 'driverNumber'
+      execute: value
+      remark: ATestDriver0
+
+    - cases: new&check driver
+      button: phone number
+      by: id
+      value: 'phone'
+      execute: value
+      remark: 505-441-3006
+
+    - cases: new&check driver
+      button: driver type
+      by: id
+      value: 'driverType'
+      execute: value
+      remark: Company Driver (W2)
+
+    - cases: new&check driver
+      button: cancel
+      by: id
+      value: 'back-btn'
+      execute: click
+      remark: ''
+
+    - cases: new&check driver
+      button: check driver phone
+      by: xpath
+      value: '//p[contains(text(), "AutoTest Driver")]'
+      execute: check result
+      remark: 'AutoTest Driver'

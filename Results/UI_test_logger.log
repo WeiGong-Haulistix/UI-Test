@@ -1,0 +1,13 @@
+[INFO][check_element][2021-08-12 18:35:56,910]Find element and check: //android.widget.TextView[@text="Welcome Granger"]
+[INFO][check_element][2021-08-12 18:35:57,987]Find element and check: //android.widget.TextView[@text="Welcome Granger"]
+[INFO][check_and_input][2021-08-12 18:35:59,055]Find element and input: com.haulistix.driver.exam:id/etLoginMobile***7079311858
+[INFO][check_and_input][2021-08-12 18:36:00,240]Find element and input: com.haulistix.driver.exam:id/etImageCaptcha***1111
+[INFO][check_and_click][2021-08-12 18:36:02,439]Find element and click: com.haulistix.driver.exam:id/btnNext
+[INFO][check_and_input][2021-08-12 18:36:05,112]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[1]***1
+[INFO][check_and_input][2021-08-12 18:36:07,187]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[2]***2
+[INFO][check_and_input][2021-08-12 18:36:08,398]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[3]***3
+[INFO][check_and_input][2021-08-12 18:36:09,609]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[4]***4
+[INFO][check_and_input][2021-08-12 18:36:11,475]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[5]***5
+[INFO][check_and_input][2021-08-12 18:36:13,896]Find element and input: //*[@resource-id="com.haulistix.driver.exam:id/layoutCaptcha"]/android.widget.EditText[6]***6
+[INFO][execute_unit][2021-08-12 18:36:18,701]Find element: com.haulistix.driver.exam:id/tv_page_title**SEARCH**SEARCH
+[INFO][check_and_click][2021-08-12 18:36:19,872]Find element and click: //android.widget.TextView[@text="My Loads"]
